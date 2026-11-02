@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Summon Aqua</string>
+    <string name="title_activity_main">Summon Aqua</string>
+    <string name="package_name">com.summon.aqua</string>
+    <string name="custom_url_scheme">com.summon.aqua</string>
+</resources>

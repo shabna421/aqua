@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #F8FAFC;
+    --color-card: #FFFFFF;
+    --color-primary: #0EA5E9;
+    --color-primary-dark: #0284C7;
+  }
+
+  body {
+    background-color: #F1F5F9;
+    color: #0F172A;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Character Mascot Animations */
+@keyframes aqua-bob {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes aqua-leg-l {
+  0%, 100% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes aqua-leg-r {
+  0%, 100% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes aqua-arm-bottle {
+  0%, 100% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+}
+
+@keyframes aqua-waving {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+}
+
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes droplet-pop {
+  0% {
+    transform: scale(0.7) translateY(12px);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.05) translateY(-2px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ripple-wave {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+}
+
+.anim-aqua-bob {
+  animation: aqua-bob 0.38s ease-in-out infinite;
+}
+
+.anim-aqua-leg-left {
+  transform-origin: 50% 10%;
+  animation: aqua-leg-l 0.38s ease-in-out infinite;
+}
+
+.anim-aqua-leg-right {
+  transform-origin: 50% 10%;
+  animation: aqua-leg-r 0.38s ease-in-out infinite;
+}
+
+.anim-aqua-bottle {
+  transform-origin: 20% 20%;
+  animation: aqua-arm-bottle 0.38s ease-in-out infinite;
+}
+
+.anim-aqua-wave {
+  transform-origin: 15% 15%;
+  animation: aqua-waving 0.4s ease-in-out infinite;
+}
+
+.anim-float {
+  animation: gentle-float 3s ease-in-out infinite;
+}
+
+.anim-droplet-pop {
+  animation: droplet-pop 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.anim-ripple {
+  animation: ripple-wave 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
